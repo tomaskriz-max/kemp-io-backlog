@@ -1,0 +1,24 @@
+name: Epic
+description: Větší celek, který se skládá z několika story
+title: "[Epic] "
+labels: ["typ: epic"]
+body:
+  - type: textarea
+    id: cil
+    attributes:
+      label: O co jde
+      description: Dvě až tři věty. Jaký problém tenhle celek řeší a pro koho.
+    validations:
+      required: true
+  - type: textarea
+    id: hotovo
+    attributes:
+      label: Kdy je epic hotový
+      description: Jak poznáme, že tuhle oblast můžeme zavřít. Ne seznam funkcí — výsledek.
+    validations:
+      required: true
+  - type: textarea
+    id: otazky
+    attributes:
+      label: Otevřené otázky
+      description: Co ještě nevíme a potřebujeme probrat s PO.

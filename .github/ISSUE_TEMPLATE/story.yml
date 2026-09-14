@@ -1,0 +1,34 @@
+name: Story
+description: Kus práce, který jde dodat a ukázat na demu
+title: ""
+labels: ["typ: story"]
+body:
+  - type: textarea
+    id: situace
+    attributes:
+      label: Situace
+      description: |
+        Kdo, co potřebuje a proč. Klidně jednou větou, klidně jako "Jako … chci … abych …".
+      placeholder: Jako účastník chci po odeslání přihlášky hned vidět, jestli jsem se vešel, abych se nemusel ptát organizátora.
+    validations:
+      required: true
+  - type: textarea
+    id: kriteria
+    attributes:
+      label: Akceptační kritéria
+      description: Ověřitelné body. Každý se dá odškrtnout ano/ne.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: mimo
+    attributes:
+      label: Co do téhle story nepatří
+      description: Nepovinné, ale hodně pomáhá. Co jsme vědomě odsunuli jinam.
+  - type: textarea
+    id: otazky
+    attributes:
+      label: Otevřené otázky
+      description: Na co se potřebujeme zeptat, než to vezmeme do sprintu.
