@@ -25,8 +25,10 @@ Hlubší zanořování nedělejte. Když story potřebuje rozpad, je to nejspí�
 
 ## Sprinty jsou milestones
 
-Iterace v GitHub Projects umí jen placené plány, takže **sprint = milestone**. Má datum
-konce, které odpovídá sprint review, a na první pohled je vidět, kolik z něj zbývá.
+GitHub Projects umí i **iterační pole**, ale sprint vědomě držíme na **milestonu**. Důvod je
+praktický: milestone je vidět přímo v repozitáři, dá se podle něj filtrovat seznam issues
+a nemusíte kvůli němu otevírat board. Iterace by žila jen v projektu — a měli bychom dvě
+místa, která se dřív nebo později rozejdou.
 
 | Milestone | Konec | O čem to je |
 |---|---|---|
@@ -55,10 +57,16 @@ kromě `stav`, který se používá jen když je potřeba.
 
 ## Board
 
+[kemp.io — ukázkový backlog](https://github.com/users/tomaskriz-max/projects/1) je veřejný
+a všechny issues z tohohle repozitáře v něm jsou.
+
 Sloupce držíme jednoduché: **Backlog → Připraveno → Děláme → Review → Hotovo.**
 
 Do `Děláme` patří jen to, co má někdo rozdělané. Když tam visí pět věcí na tři lidi,
 něco je špatně.
+
+Board má dva pohledy — *Sprint board* na denní práci a *Celý backlog* jako tabulku.
+V tabulce si zapněte seskupení podle `Milestone` a uvidíte sprinty pod sebou.
 
 ## Definition of Ready
 
