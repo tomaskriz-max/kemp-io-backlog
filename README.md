@@ -67,6 +67,9 @@ kromě `stav`, který se používá jen když je potřeba.
 [kemp.io — ukázkový backlog](https://github.com/users/tomaskriz-max/projects/1) je veřejný
 a všechny issues z tohohle repozitáře v něm jsou.
 
+**Jak si takový board postavit u sebe: [SETUP.md](SETUP.md).** Skriptem to je minuta,
+ručně deset minut.
+
 Sloupce držíme jednoduché: **Backlog → Připraveno → Děláme → Review → Hotovo.**
 
 Do `Děláme` patří jen to, co má někdo rozdělané. Když tam visí pět věcí na tři lidi,
