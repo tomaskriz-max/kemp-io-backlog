@@ -23,22 +23,29 @@ Nemusíte nic psát ručně — přidáte sub-issue a GitHub dopočítá zbytek.
 
 Hlubší zanořování nedělejte. Když story potřebuje rozpad, je to nejspíš malý epic.
 
-## Sprinty jsou milestones
+## Sprinty jsou iterace
 
-GitHub Projects umí i **iterační pole**, ale sprint vědomě držíme na **milestonu**. Důvod je
-praktický: milestone je vidět přímo v repozitáři, dá se podle něj filtrovat seznam issues
-a nemusíte kvůli němu otevírat board. Iterace by žila jen v projektu — a měli bychom dvě
-místa, která se dřív nebo později rozejdou.
+Na boardu je pole **Sprint** typu *iterace*. Není to štítek ani datum — GitHub o iteraci ví,
+že má začátek a konec, takže sám pozná, která zrovna běží, a nabídne ji jako první.
 
-| Milestone | Konec | O čem to je |
-|---|---|---|
-| `Sprint 1 · validace` | 19. 10. 2026 | lean canvas, byznys, nasazená prázdná šablona |
-| `Sprint 2 · jádro přihlašování` | 9. 11. 2026 | jedna cesta end-to-end, nasazená |
-| `Sprint 3 · první modul` | 23. 11. 2026 | první modul z kostry |
-| `Sprint 4 · dotažení` | 30. 11. 2026 | jeden malý modul nebo nedodělky |
-| `Po výuce · prezentace` | 15. 1. 2027 | bez PO checkpointu, příprava prezentace |
+Sprinty jsou schválně nestejně dlouhé. Přesně tak, jak vychází semestr:
 
-Co nemá milestone, je **neplánovaný backlog**. To je v pořádku a je tam většina věcí.
+| Sprint | Od | Do | Délka | O čem to je |
+|---|---|---|---|---|
+| Sprint 1 · validace | 21. 9. | 19. 10. | 4 týdny | lean canvas, byznys, nasazená prázdná šablona |
+| Sprint 2 · jádro přihlašování | 19. 10. | 9. 11. | 3 týdny | jedna cesta end-to-end, nasazená |
+| Sprint 3 · první modul | 9. 11. | 23. 11. | 2 týdny | první modul z kostry |
+| Sprint 4 · dotažení | 23. 11. | 30. 11. | 1 týden | jeden malý modul nebo nedodělky |
+| Po výuce · prezentace | 30. 11. | 15. 1. | 6 týdnů | bez PO checkpointu, příprava prezentace |
+
+Všimněte si toho tvaru: **4 – 3 – 2 – 1.** Sprinty se zkracují přesně ve chvíli, kdy roste
+složitost. To není chyba rozvrhu, se kterou se dá něco udělat — je to věc, se kterou musíte
+počítat při odhadech.
+
+**Sprint dostávají jen story**, ne epiky. Epic běží napříč sprinty; kdyby měl vlastní sprint,
+tvářil by se jako závazek na jednu iteraci a nebyla by pravda.
+
+Co nemá sprint, je **neplánovaný backlog**. To je v pořádku a je tam většina věcí.
 
 ## Štítky
 
@@ -66,7 +73,8 @@ Do `Děláme` patří jen to, co má někdo rozdělané. Když tam visí pět v�
 něco je špatně.
 
 Board má dva pohledy — *Sprint board* na denní práci a *Celý backlog* jako tabulku.
-V tabulce si zapněte seskupení podle `Milestone` a uvidíte sprinty pod sebou.
+V tabulce si zapněte seskupení podle pole `Sprint` a uvidíte iterace pod sebou i s tím,
+která zrovna běží.
 
 ## Definition of Ready
 
